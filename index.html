@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USDT Emporium - Luxury Crypto Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🛍️ USDT EMPORIUM</h1>
+                <p>Luxury Crypto Shopping</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#how-to-buy">How to Buy</a></li>
+                    <li><a href="#shipping">Shipping</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total">
+            <p>Total: <span id="cartTotal">0</span> USDT</p>
+            <button class="checkout-btn" id="checkoutBtn">Checkout with USDT</button>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>✨ Luxury Shopping with USDT</h2>
+                <p>Premium Products • Global Delivery • Secure Crypto Payments</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h2>🛍️ Our Products</h2>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="watches">⌚ Watches</button>
+                <button class="category-btn" data-category="electronics">📱 Electronics</button>
+                <button class="category-btn" data-category="clothing">👕 Clothing</button>
+                <button class="category-btn" data-category="beauty">💄 Beauty</button>
+                <button class="category-btn" data-category="home">🏠 Home</button>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <section class="payment" id="how-to-buy">
+        <div class="container">
+            <h2>💳 How to Pay with USDT</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Add to Cart</h3>
+                    <p>Select products and add to cart</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Checkout</h3>
+                    <p>Click checkout and pay with USDT</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Auto Confirm</h3>
+                    <p>Payment confirmed automatically</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Track Order</h3>
+                    <p>Receive tracking number by email</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shipping" id="shipping">
+        <div class="container">
+            <h2>🚚 Worldwide Shipping</h2>
+            <div class="shipping-grid">
+                <div class="shipping-card">
+                    <i class="fas fa-flag-usa"></i>
+                    <h3>USA Delivery</h3>
+                    <p>3-6 Business Days</p>
+                    <p class="shipping-price">Free over $100</p>
+                </div>
+                <div class="shipping-card">
+                    <i class="fas fa-flag-eu"></i>
+                    <h3>Europe Delivery</h3>
+                    <p>3-7 Business Days</p>
+                    <p class="shipping-price">Free over €100</p>
+                </div>
+                <div class="shipping-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Worldwide</h3>
+                    <p>7-14 Days</p>
+                    <p class="shipping-price">Calculated at checkout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>📞 Contact & Support</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>24/7 response within 2 hours</p>
+                    <a href="mailto:support@usdtemporium.com" class="contact-link">Email Us</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Telegram Bot</h3>
+                    <p>Instant automated support</p>
+                    <a href="https://t.me/YourStoreUSDT_bot" target="_blank" class="contact-link">Open Bot</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Order Tracking</h3>
+                    <p>Track your order in real-time</p>
+                    <a href="#tracking" class="contact-link">Track Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🛍️ USDT EMPORIUM</h3>
+                    <p>Luxury Shopping with Cryptocurrency</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#how-to-buy">How to Buy</a>
+                    <a href="#shipping">Shipping</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#returns">Returns Policy</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 USDT Emporium. All rights reserved.</p>
+                <p>Secure Crypto Payments • Worldwide Shipping</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-lock"></i> Secure Checkout</h2>
+            <div class="modal-body">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="orderItems"></div>
+                    <div class="order-total">
+                        <p>Total: <span id="orderTotal">0</span> USDT</p>
+                    </div>
+                </div>
+                <div class="checkout-form">
+                    <h3>Shipping Information</h3>
+                    <input type="text" id="customerName" placeholder="Full Name" required>
+                    <input type="email" id="customerEmail" placeholder="Email Address" required>
+                    <input type="text" id="customerAddress" placeholder="Shipping Address" required>
+                    <input type="text" id="customerPhone" placeholder="Phone Number">
+                    
+                    <button class="btn pay-now-btn" id="payNowBtn">
+                        <i class="fas fa-bolt"></i> Pay with USDT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content payment-modal">
+            <h2><i class="fas fa-qrcode"></i> Pay with USDT</h2>
+            <div class="modal-body">
+                <div class="qrcode-container" id="qrcodeContainer">
+                    <div class="qrcode-placeholder">
+                        <i class="fas fa-qrcode fa-5x"></i>
+                        <p>Scan to pay</p>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <p>Amount: <strong id="paymentAmount">0</strong> USDT</p>
+                    <p>Network: <strong>TRC20</strong></p>
+                    <div class="address-box">
+                        <code id="paymentAddress">TX4gkGMR2xEXxvfrNwLHkrLNpe3erGsUjy</code>
+                        <button onclick="copyPaymentAddress()" class="copy-btn">
+                            <i class="far fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <p class="payment-note">Send exact amount to the address above</p>
+                    <div class="payment-status">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span id="statusText">Waiting for payment...</span>
+                    </div>
+                    <div class="payment-timer">
+                        <p>Time remaining: <span id="paymentTimer">05:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal success-modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Confirmed!</h2>
+            <p>Your payment has been received.</p>
+            <p>Order ID: <strong id="orderId">USDT-XXXXXX</strong></p>
+            <button class="btn" onclick="closeSuccessModal()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
